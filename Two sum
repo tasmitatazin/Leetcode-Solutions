@@ -1,0 +1,33 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+
+    vector<int> returnthis; 
+    bool breakout=false;
+    
+    for (size_t i=0; i<nums.size(); i++)
+    {
+        for (size_t j=i+1; i<nums.size(); i++)
+        
+        
+        
+        if (nums[i]+nums[j]==target)
+        {
+            returnthis.push_back(i);
+            returnthis.push_back(j);
+            breakout=true;
+            break;
+        }
+       
+
+        if (breakout==true)
+        {
+            break;
+        }
+    }
+
+
+        return returnthis;
+    }
+    
+};
